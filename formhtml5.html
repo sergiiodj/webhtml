@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function updateTextInput(val){
+            document.getElementById('textRango').value=val;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+        </header>
+        <div id="principal">
+            <nav>
+                <!-- ul>a*9>li  -->
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="parrafos.html"><li>PÁRRAFOS</li></a>
+                    <a href="enlaces.html"><li>ENLACES</li></a>
+                    <a href="listas.html"><li>LISTAS</li></a>
+                    <a href="tablas.html"><li>TABLAS</li></a>
+                    <a href="formularios.html"><li>FORMULARIOS</li></a>
+                    <a href="multimedia.html"><li>MULTIMEDIA</li></a>
+                    <a href="formhtml5.html"><li>FORM-HTML5</li></a>
+                </ul>
+            </nav>
+            <div id="content">
+                <div id="formhtml5">
+                    <h1 class="txt-center">Formularios HTML5</h1>
+                    <form action="pagina.php" method="get" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Form HTML5</legend>
+                            <p><input type="url" name="url" id="" placeholder="Url"></p>
+                            <p><input type="email" name="email" id="" placeholder="Email"></p>
+                            <p><input type="date" name="date" id="" ></p>
+                            <p><input type="datetime-local" name="fechahoralocal" id=""></p>
+                            <p><input type="month" name="mes" id=""></p>
+                            <p><input type="week" name="semana" id=""></p>
+                            <p><input type="number" name="numero" id="" min="0" max="100" step="10" ></p>
+                            <p>
+                                <input type="range" name="rango" id="" min="0" max="100" step="10" onchange="updateTextInput(this.value);">
+                                <input type="text" id="textRango">
+                            </p>
+                            <p><input type="color" name="color" id=""></p>
+                            <p><input type="file" name="archivo" id=""></p>
+                            <p><input type="search" name="buscar" id="" placeholder="Buscar..."></p>
+                            <p>
+                                <input type="reset" value="Limpiar">
+                                <input type="submit" value="Enviar">
+                            </p>
+                            
+
+                        </fieldset>
+                    </form>
+                    <p> </p>
+                   
+                </div>
+            </div>
+            <div class="cb"></div>
+        </div>
+        <footer>&copy; Sergio Dominguez - S1DAM</footer>
+    </div>
+</body>
+</html>
